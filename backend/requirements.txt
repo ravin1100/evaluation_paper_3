@@ -5,3 +5,6 @@ postgres
 
 pydantic
 asyncio
+sqlmodel
+
+aiosqlite
