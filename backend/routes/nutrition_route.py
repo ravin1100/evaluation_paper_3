@@ -12,7 +12,7 @@ router = APIRouter(prefix="/nutrition", tags=["Nutrition"])
 
 
 @router.post("/")
-async def create_exercise(
+async def create_nutrition(
     workout: WorkoutCreate,
     db: AsyncSession = Depends(get_db),
 ):
@@ -20,7 +20,7 @@ async def create_exercise(
 
 
 @router.get("/{id}")
-async def get_exercise(
+async def get_nutrition(
     id: int,
     db: AsyncSession = Depends(get_db),
 ):
@@ -28,7 +28,7 @@ async def get_exercise(
 
 
 @router.put("/{id}")
-async def update_exercise(
+async def update_nutrition(
     id: int,
     workout: WorkoutUpdate,
     db: AsyncSession = Depends(get_db),
@@ -37,7 +37,7 @@ async def update_exercise(
 
 
 @router.delete("/{id}")
-async def update_exercise(
+async def update_nutrition(
     id: int,
     db: AsyncSession = Depends(get_db),
 ):
